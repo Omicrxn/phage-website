@@ -1,0 +1,23 @@
+h1{
+    font-family: 'Montserrat';
+    font-weight: 300;
+    --max-size: 70;
+    --min-size: 50;
+    font-size: var(--responsive);
+    line-height: 150%;
+    opacity: 1;
+}
+
+.photo-business
+{
+    max-height: 45px;
+    width: auto;
+}
+
+.hero-img{
+    width: 100%;
+    max-width: 646px ;
+    height: auto;
+  }
+
+

@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 286.04 344.91">
+<defs>
+<style>
+.cls-1,.cls-2,.cls-3{fill:none;stroke:#1d1d1b;stroke-width:2.16px;}
+.cls-1,.cls-3{stroke-miterlimit:10;}.cls-2,.cls-3{stroke-linecap:round;}
+.cls-2{stroke-linejoin:round;}
+@media (prefers-color-scheme: dark) {
+      .cls-1,.cls-2,.cls-3{fill:none;stroke:#1d1d1b;stroke-width:2.16px;}
+.cls-1,.cls-3{stroke-miterlimit:10;}.cls-2,.cls-3{stroke-linecap:round;}
+.cls-2{stroke-linejoin:round;}
+    }
+</style>
+</defs>
+<g id="Layer_2" data-name="Layer 2"><g id="Logotypes"><path class="cls-1" d="M202.37,226,149.74,339.55a7.42,7.42,0,0,1-13.44,0L83.67,226a7.42,7.42,0,0,1,9.4-9.86l50,26.17s-30.51,47.16,0,48.36c30.51-1.2,0-48.36,0-48.36L193,216.17A7.42,7.42,0,0,1,202.37,226Z"/><polygon class="cls-2" points="143.02 1.08 73.24 41.39 73.21 41.39 73.21 122 143.02 162.28 212.83 122 212.83 41.39 143.02 1.08"/><path class="cls-3" d="M248.9,223A36.07,36.07,0,0,0,285,187c0-.83,0-1.65-.08-2.47-1-15.42-12.23-27.09-26.05-30.7A35.87,35.87,0,0,0,233.45,157L143,203.47,52.49,156.93a35.75,35.75,0,0,0-23.07-3.65c-14.82,2.9-27.16,15-28.26,31.21,0,.82-.08,1.64-.08,2.47A36.07,36.07,0,0,0,37.15,223"/></g></g></svg>
