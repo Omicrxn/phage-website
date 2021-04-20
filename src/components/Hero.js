@@ -5,8 +5,8 @@ import { Col, Row, Container, Jumbotron,Image,Carousel, CarouselItem } from 'rea
 import "./Hero.css"
 export default function Hero(props) {
     return (
-        <Jumbotron className="bg-transparent jumbotron p-0 d-flex align-items-center" style={{height: "100vh"}} >
-            <Container className="bg-transparent d-flex flex-column" fluid={false} >
+
+            <Container className="bg-transparent d-flex justify-content-center  flex-column" fluid={false} >
                 <Row className="bg-transparent">
                     <Col lg={6} md={6}  sm={12}>
                         <div className="text-sm-left text-center">
@@ -20,7 +20,6 @@ export default function Hero(props) {
                     <Image className="hero-img"  src={process.env.PUBLIC_URL + '/images/wireframes.png'}/>
                     </Col>
                 </Row>
-
                 <Row className="d-flex justify-content-center align-middle row-cols-5" style={{paddingTop:"5vw"}}>
                     <Col className="d-flex justify-content-center align-items-end " >
                     <Image className="photo-business" src={process.env.PUBLIC_URL + '/images/lacreativitat.png'} style={{maxHeight:"50px"}}/>
@@ -39,8 +38,9 @@ export default function Hero(props) {
                     </Col>
 
                 </Row>
+
             </Container>
-        </Jumbotron>
+
     )
 }
 

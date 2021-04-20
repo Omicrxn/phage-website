@@ -45,8 +45,13 @@
   color: var(--phage-dark);
   --diff: calc(var(--max-size) - var(--min-size));
   --responsive: calc((var(--min-size) * 1px) + var(--diff) * ((100vw - 320px) / (1920 - 320))); /* Ranges from 421px to 1199px*/
+  box-sizing: border-box;
+  
 }
-
+.App{
+  padding: 0;
+  margin: 0;
+}
 /* Navbar */
 .nav-text {
   font-family: 'orkney';
@@ -65,6 +70,7 @@
   max-width: 32px ;
   height: auto;
 }
+
 
 
 /* body {

@@ -2,7 +2,7 @@ import React from 'react'
 import {BrowserRouter as Router, Route,Link} from 'react-router-dom'
 import Container from 'react-bootstrap/Container'
 import NavBar from 'react-bootstrap/NavBar'
-import { Nav } from 'react-bootstrap';
+import Nav from 'react-bootstrap/Nav';
 
 
 import Home from './pages/Home'
@@ -39,12 +39,12 @@ class App extends React.Component {
   render(){
     return (
         <Router>
-          <Container className="" fluid={false}>
+          <Container className="p-0 d-flex flex-column" fluid={false}  style={{height:"100vh"}}>
             <NavBar id="navbar-expanded" className="d-lg-flex d-none">
               <Nav className="w-50">
-                <Nav.Link className="nav-link nav-text" to="/portfolio">Portfolio</Nav.Link>
-                <Nav.Link className="nav-link nav-text" to="/services">Services</Nav.Link>
-                <Nav.Link className="nav-link nav-text" to="/contact">Contact</Nav.Link>
+                <Link className="nav-link text-center" to="/portfolio">Portfolio</Link>
+                <Link className="nav-link nav-text" to="/services">Services</Link>
+                <Link className="nav-link nav-text" to="/contact">Contact</Link>
               </Nav>
               <Container>
               <NavBar.Brand as={Link} to="/" className="mx-auto"><img className="nav-brand" src={process.env.PUBLIC_URL + '/images/Lettering.png'}/></NavBar.Brand>
@@ -58,11 +58,11 @@ class App extends React.Component {
             <NavBar id="navbar-expanded" expand="lg" className="d-lg-none">
             <NavBar.Brand as={Link} to="/" className=""><img className="nav-brand" src={process.env.PUBLIC_URL + '/images/Lettering.png'}/></NavBar.Brand>
             <NavBar.Toggle className="border-0" aria-controls="responsive-navbar-nav" />
-            <NavBar.Collapse id="responsive-navbar-nav" className="w-50">
-                <Nav>
-                  <Nav.Link className="nav-link nav-text" to="/portfolio">Portfolio</Nav.Link>
-                  <Nav.Link className="nav-link nav-text" to="/services">Services</Nav.Link>
-                  <Nav.Link className="nav-link nav-text" to="/contact">Contact</Nav.Link>
+            <NavBar.Collapse id="responsive-navbar-nav" className=" pt-4 w-50">
+                <Nav className="text-center">
+                  <Link className="nav-link nav-text" to="/portfolio">Portfolio</Link>
+                  <Link className="nav-link nav-text" to="/services">Services</Link>
+                  <Link className="nav-link nav-text" to="/contact">Contact</Link>
                 </Nav>
               </NavBar.Collapse>
             </NavBar>
@@ -85,11 +85,14 @@ class App extends React.Component {
                 </Nav>
               </NavBar.Collapse>
             </NavBar> */}
-            <Route  path="/" exact render={() => <Home title={this.state.home.title} title2={this.state.home.title2} subTitle={this.state.home.subTitle}/>}/>
+            <Container className="d-flex justify-content-center align-items-center my-auto">
+            <Route  path="/" exact render={() =><Home title={this.state.home.title} title2={this.state.home.title2} subTitle={this.state.home.subTitle}/>}/>   
             <Route path="/portfolio" exact render={() => <Portfolio title={this.state.portfolio.title} />}/>
             <Route path="/contact" exact render={() => <Contact title={this.state.contact.title}/>}/>
             <Route path="/services" exact render={() => <Services title={this.state.contact.title}/>}/>
+            </Container>
           </Container>
+
         </Router>
       );
   }
