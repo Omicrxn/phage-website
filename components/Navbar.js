@@ -6,7 +6,7 @@ export default function Navbar() {
   const router = useRouter();
   return (
     <>
-      <nav className="navbar navbar-expand-lg navbar-light d-lg-flex d-none">
+      <nav className="navbar navbar-expand-lg navbar-light d-lg-flex d-none mt-1">
         <div className="container ">
           <ul class="navbar-nav w-50 justify-content-start">
             <li class="nav-item ">
@@ -78,7 +78,7 @@ export default function Navbar() {
         </div>
       </nav>
 
-      <nav className="navbar navbar-expand-lg navbar-light d-lg-none ">
+      <nav className="navbar navbar-expand-lg navbar-light d-lg-none mt-3 ">
         <div className="container d-flex">
         <Link className="navbar-brand mx-auto " href="/" aria-current="page">
               <Image layout="intrinsic" className="nav-brand" src="/images/Lettering.png" width={136} height={25} />
