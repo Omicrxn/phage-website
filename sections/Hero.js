@@ -2,7 +2,7 @@ import Image from "next/image";
 
 const Hero = () => {
   return (
-    <div className="container mx-0 my-auto">
+    <div className="container  my-auto">
       <div className="row">
         <div className="col-lg-6">
           <div className="text-lg-start  text-center">
@@ -19,8 +19,8 @@ const Hero = () => {
           <Image
             className="hero-img"
             src="/images/wireframes.png"
-            width={4398}
-            height={2814}
+            width={4302}
+            height={2748}
             layout="responsive"
           />
         </div>

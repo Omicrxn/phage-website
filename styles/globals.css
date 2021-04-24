@@ -89,7 +89,7 @@ a {
 h1{
   font-family: 'Montserrat';
   font-weight: 300;
-  --max-size: 70;
+  --max-size: 69;
   --min-size: 45;
   font-size: var(--responsive);
   line-height: 150%;
