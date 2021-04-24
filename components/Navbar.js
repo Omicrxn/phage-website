@@ -6,7 +6,7 @@ export default function Navbar() {
   const router = useRouter();
   return (
     <>
-      <nav className="navbar navbar-expand-lg navbar-light d-lg-flex d-none fixed-top">
+      <nav className="navbar navbar-expand-lg navbar-light d-lg-flex d-none">
         <div className="container ">
           <ul class="navbar-nav w-50 justify-content-start">
             <li class="nav-item ">
@@ -79,7 +79,7 @@ export default function Navbar() {
       </nav>
 
       <nav className="navbar navbar-expand-lg navbar-light d-lg-none ">
-        <div className="container d-flex justify-content-between">
+        <div className="container d-flex">
         <Link className="navbar-brand mx-auto " href="/" aria-current="page">
               <Image layout="intrinsic" className="nav-brand" src="/images/Lettering.png" width={136} height={25} />
             </Link>
@@ -119,6 +119,32 @@ export default function Navbar() {
                 >
                   <Link href="/services" aria-current="page">
                     Services
+                  </Link>
+                </div>
+              </li>
+              <li class="nav-item">
+                <div
+                  className={
+                    router.pathname == "/services"
+                      ? " nav-link active "
+                      : "nav-link"
+                  }
+                >
+                  <Link href="/contact" aria-current="page">
+                    Contact
+                  </Link>
+                </div>
+              </li>
+              <li class="nav-item">
+                <div
+                  className={
+                    router.pathname == "/services"
+                      ? " nav-link active "
+                      : "nav-link"
+                  }
+                >
+                  <Link href="/about" aria-current="page">
+                    About
                   </Link>
                 </div>
               </li>

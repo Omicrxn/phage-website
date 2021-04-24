@@ -10,7 +10,7 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <div className="container d-flex flex-column justify-content-center my-auto">
-        <div className="row">
+        <div className="row my-md-5 mt-5">
           <div className="col-md-6 col-12">
             <div className="text-md-start  text-center">
               <h1>Your dream</h1>
@@ -22,7 +22,7 @@ export default function Home() {
             </div>
           </div>
 
-          <div className="col-md-6 col-12">
+          <div className="col-lg-6 col-md-6 col-12">
             <Image
               className="hero-img"
               src="/images/wireframes.png"
@@ -33,21 +33,21 @@ export default function Home() {
           </div>
         </div>
 
-        <div className="row row-cols-5">
-          <div className="d-flex justify-content-center align-items-end">
-            <Image className="photo-business" src="/images/lacreativitat.png" width={74.1} height={43}/>
+        <div className="row row-cols-4 mt-md-5">
+          <div className="d-flex justify-content-center align-items-center">
+            <Image layout="intrinsic" src="/images/lacreativitat.png" width={86.163} height={50}/>
           </div>
-          <div className="d-flex justify-content-center align-items-end">
-            <Image className="photo-business" src="/images/VNG-Ajuntament.png" width={76.096} height={45}/>
+          {/* <div className="d-flex justify-content-center align-items-end">
+            <Image layout="intrinsic" src="/images/VNG-Ajuntament.png" width={76.096} height={45}/>
+          </div> */}
+          <div className="d-flex justify-content-center align-items-center">
+            <Image layout="intrinsic" src="/images/lacreativitat-surtidor.png" width={50} height={50}/>
           </div>
-          <div className="d-flex justify-content-center align-items-end">
-            <Image className="photo-business" src="/images/lacreativitat-surtidor.png" width={48} height={48}/>
+          <div className="d-flex justify-content-center align-items-center">
+            <Image layout="intrinsic" src="/images/sushichef-icon-letra2.png" width={ 105.69} height={37}/>
           </div>
-          <div className="d-flex justify-content-center align-items-end">
-            <Image className="photo-business" src="/images/sushichef-icon-letra2.png" width={ 105.69} height={37}/>
-          </div>
-          <div className="d-flex justify-content-center align-items-end">
-            <Image className="photo-business" src="/images/JR.png" width={70.546} height={37}/>
+          <div className="d-flex justify-content-center align-items-center">
+            <Image layout="intrinsic" src="/images/JR.png" width={70.546} height={37}/>
           </div>
         </div>
       </div>
