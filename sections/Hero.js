@@ -15,7 +15,7 @@ const Hero = () => {
           </div>
         </div>
 
-        <div className="col-lg-6">
+        <div className="col-lg-6 p-0">
           <Image
             className="hero-img"
             src="/images/wireframes.png"
