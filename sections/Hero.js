@@ -2,7 +2,7 @@ import Image from "next/image";
 
 const Hero = () => {
   return (
-    <div className="container  my-auto">
+    <div className="my-auto">
       <div className="row">
         <div className="col-lg-6">
           <div className="text-lg-start  text-center">

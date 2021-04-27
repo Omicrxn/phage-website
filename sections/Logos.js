@@ -2,7 +2,7 @@ import Image from "next/image";
 
 const Logos = () => {
   return (
-    <div className="container">
+    <div className="">
       <div className="row row-cols-4">
         <div className="d-flex justify-content-center align-items-center">
           <Image

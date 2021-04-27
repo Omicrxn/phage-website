@@ -10,15 +10,10 @@ export default function Home() {
         <title>Phage | Home</title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <div className="container d-flex flex-column justify-content-lg-end  h-100" style={{margin:"8vh 0  8vh 0"}}>
+      <div className="d-flex flex-column justify-content-lg-end  h-100">
         <Hero />
         <Logos />
       </div>
-
-      {/* <div className="container d-flex flex-column justify-content-center h-100" >
-        <Hero />
-        <Logos />
-      </div> */}
 
     </>
   );
