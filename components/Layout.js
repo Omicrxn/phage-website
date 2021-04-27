@@ -5,10 +5,13 @@ import Navbar from './Navbar'
  //children property is basically anything nested inside the layout component in _app.js
     const Layout = ({ children }) => {
         return (
-          <div className="h-100 d-flex flex-column">
+          <main className="container mx-auto h-full flex flex-col items-center justify-start">
             <Navbar />
+            <div className=" px-2 w-full my-auto">
             { children }
-          </div>
+            </div>
+
+          </main>
         );
       }
        

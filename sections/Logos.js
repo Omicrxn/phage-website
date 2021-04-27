@@ -1,10 +1,9 @@
 import Image from "next/image";
-
+import React from "react";
 const Logos = () => {
   return (
-    <div className="">
-      <div className="row row-cols-4">
-        <div className="d-flex justify-content-center align-items-center">
+      <div className="grid grid-cols-5 mx-3 lg:mx-0">
+        <div className="p-3 flex justify-center items-center">
           <Image
             layout="intrinsic"
             src="/images/lacreativitat.png"
@@ -12,10 +11,15 @@ const Logos = () => {
             height={50}
           />
         </div>
-        {/* <div className="d-flex justify-content-center align-items-end">
-            <Image layout="intrinsic" src="/images/VNG-Ajuntament.png" width={76.096} height={45}/>
-          </div> */}
-        <div className="d-flex justify-content-center align-items-center">
+        <div className="p-3 flex justify-center items-center">
+          <Image
+            layout="intrinsic"
+            src="/images/VNG-Ajuntament.png"
+            width={76.096}
+            height={45}
+          />
+        </div>
+        <div className="p-3 flex justify-center items-center">
           <Image
             layout="intrinsic"
             src="/images/lacreativitat-surtidor.png"
@@ -23,7 +27,7 @@ const Logos = () => {
             height={50}
           />
         </div>
-        <div className="d-flex justify-content-center align-items-center">
+        <div className="p-3 flex justify-center items-center">
           <Image
             layout="intrinsic"
             src="/images/sushichef-icon-letra2.png"
@@ -31,7 +35,7 @@ const Logos = () => {
             height={37}
           />
         </div>
-        <div className="d-flex justify-content-center align-items-center">
+        <div className="p-3 flex justify-center items-center">
           <Image
             layout="intrinsic"
             src="/images/JR.png"
@@ -40,7 +44,6 @@ const Logos = () => {
           />
         </div>
       </div>
-    </div>
   );
 };
 
