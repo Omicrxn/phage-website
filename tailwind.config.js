@@ -1,10 +1,7 @@
   // tailwind.config.js
   module.exports = {
     purge: {
-      content: [
-          './components/**/*.{js,ts,jsx,tsx}',
-          './pages/**/*.{js,ts,jsx,tsx}'
-      ],
+      content: ['./pages/**/*.{js,ts,jsx,tsx}', './components/**/*.{js,ts,jsx,tsx}', './sections/**/*.{js,ts,jsx,tsx}'],
       options: {
           safelist: {
               standard: ['outline-none']
