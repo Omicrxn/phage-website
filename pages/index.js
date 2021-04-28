@@ -6,7 +6,7 @@ import styles from "../styles/Home.module.css";
 
 export default function Home() {
   return (
-    <>
+    <div className="px-2 w-full my-auto">
       <Head>
         <title>Phage | Home</title>
         <link rel="icon" href="/favicon.ico" />
@@ -31,6 +31,6 @@ export default function Home() {
           <Logos />
         </motion.div>
       </div>
-    </>
+    </div>
   );
 }

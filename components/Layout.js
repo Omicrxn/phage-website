@@ -7,9 +7,9 @@ import Navbar from './Navbar'
         return (
           <main className="container mx-auto h-full flex flex-col items-center justify-start">
             <Navbar />
-            <div className=" px-2 w-full my-auto">
+
             { children }
-            </div>
+
 
           </main>
         );
