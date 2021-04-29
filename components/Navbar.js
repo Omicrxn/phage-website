@@ -15,7 +15,7 @@ export default function Navbar() {
             <NavItem text="About" href="/about" />
             <NavItem text="Contact" href="/contact" />
           </ul>
-          <div className="flex flex-1 justify-center items-center">
+          <div className="flex flex-1 justify-center items-center cursor-pointer">
           <Link  href="/" aria-current="page">
               <Image layout="intrinsic" src="/images/Lettering.png" width={181.616} height={30} />
           </Link>
