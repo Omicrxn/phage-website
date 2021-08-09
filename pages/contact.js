@@ -14,15 +14,15 @@ import {
 
 export default function Contact() {
   return (
-    <div className="container flex flex-col  h-full">
-      <h2 className="mx-4 md:mx-0 mt-7 md:my-7 text-5xl font-header font-normal text-phage-dark">
+    <div className="container flex flex-col h-full">
+      <h2 className="mx-5 md:mx-0 mt-7 mb-7 md:my-7 text-5xl font-header font-normal text-phage-dark">
         We are here for you
       </h2>
-      <div className="flex items-center h-full">
-        <div className="flex flex-1">
+      <div className="flex items-center h-full flex-wrap mx-5 md:mx-0">
+        <div className="flex flex-1 flex-wrap">
           {/* Contact form */}
-
-            <form action="" className="flex-1 space-y-10 ">
+          <div className="flex-grow">
+            <form action="flex-grow" className="space-y-10 ">
               <Input label="Full Name" />
               <Input label="Email" />
               <Input label="Message" />
@@ -33,25 +33,25 @@ export default function Contact() {
                 Send
               </button>
             </form>
-
-          {/* Icons */}
-          <div className="flex flex-1 justify-center">
-          <div className="flex flex-col justify-between">
-            <div className="flex  items-center">
-              <FiMapPin className="mr-2" size={32} />
-              <p>
-                Vilanova i la geltrú <br /> Barcelona,Spain.
-              </p>
-            </div>
-            <div className="flex items-center">
-              <FiSmartphone className="mr-2" size={32} />
-              <p>+34 639 13 44 48</p>
-            </div>
-            <div className="flex items-center">
-              <FiMail className="mr-2" size={32} />
-              <p>phagedevelopment@gmail.com</p>
-            </div>
           </div>
+          {/* Icons */}
+          <div className="flex flex-grow justify-center mt-10 lg:mt-0">
+            <div className="flex flex-col justify-between space-y-10">
+              <div className="flex  items-center ">
+                <FiMapPin className="mr-2 " size={32} />
+                <p>
+                  Vilanova i la geltrú <br /> Barcelona,Spain.
+                </p>
+              </div>
+              <div className="flex items-center ">
+                <FiSmartphone className="mr-2" size={32} />
+                <p>+34 639 13 44 48</p>
+              </div>
+              <div className="flex items-center">
+                <FiMail className="mr-2" size={32} />
+                <p>phagedevelopment@gmail.com</p>
+              </div>
+            </div>
           </div>
         </div>
       </div>

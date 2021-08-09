@@ -2,8 +2,6 @@ import Image from "next/image";
 import React from "react";
 const Logos = () => {
   return (
-    <div className="flex flex-col">
-      <p className="pl-3 lg:p-0">Meet some of our clients:</p>
       <div className="grid grid-cols-5 mx-3 lg:mx-0">
         <div className="p-3 flex justify-center items-center">
           <Image
@@ -46,7 +44,7 @@ const Logos = () => {
           />
         </div>
       </div>
-    </div>
+
   );
 };
 
