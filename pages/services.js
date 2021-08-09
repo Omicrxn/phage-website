@@ -5,15 +5,16 @@ import styles from "../styles/Home.module.css";
 
 export default function Services() {
   return (
-    <div className="w-full">
+    <div className="w-full px-3 md:px-0">
       <Head>
         <title>Phage | Services</title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <h2 className="my-7 text-5xl font-header font-normal text-phage-primary">
+      <h2 className=" mx-4 md:mx-0 mt-7 md:my-7 text-5xl font-header font-normal text-phage-dark">
         Services
       </h2>
-      <div className="mt-20">
+      <div>
+      <div className="md:mt-20">
         <ServiceRight
           title="Design"
           text="A bad design may lead to an unsuccessful business. Good design will help you stand out from your competition and leave an impression on the customers."
@@ -39,6 +40,7 @@ export default function Services() {
           width="540"
           height="540"
         />
+        </div>
         </div>
     </div>
   );

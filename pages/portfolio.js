@@ -4,12 +4,12 @@ import styles from "../styles/Home.module.css";
 
 export default function Portfolio() {
   return (
-    <div className="w-full">
+    <div className="w-full px-3 md:px-0">
       <Head>
         <title>Phage | Portfolio</title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <h2 className="my-7 text-5xl font-header font-normal text-phage-primary">Portfolio</h2>
+      <h2 className="my-7 mx-4 md:mx-0 text-5xl font-header font-normal text-phage-dark">Portfolio</h2>
 
       <div className="w-full my-6 grid grid-cols-1 gap-y-6 md:grid-cols-3 md:grid-rows-4 md:gap-6">
 

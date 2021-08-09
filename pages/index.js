@@ -6,31 +6,34 @@ import styles from "../styles/Home.module.css";
 
 export default function Home() {
   return (
-    <div className="px-2 w-full my-auto">
+    <div className="container flex flex-col items-center justify-centers h-full">
       <Head>
         <title>Phage | Home</title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <div className="flex flex-col items-center">
-        <div className="w-full lg:my-32">
-          <Hero />
-        </div>
-        <motion.div className="container" initial="hidden" animate="visible" variants={{
-  hidden: {
-    scale: .8,
-    opacity: 0
-  },
-  visible: {
-    scale: 1,
-    opacity: 1,
-    transition: {
-      delay: 3
-    }
-  },
-}}>
-          <Logos />
-        </motion.div>
+      <div className="w-full flex flex-grow justify-center items-center">
+        <Hero />
       </div>
+      <motion.div
+        className="container flex-grow-0 mb-20"
+        initial="hidden"
+        animate="visible"
+        variants={{
+          hidden: {
+            scale: 0.8,
+            opacity: 0,
+          },
+          visible: {
+            scale: 1,
+            opacity: 1,
+            transition: {
+              delay: 1.5,
+            },
+          },
+        }}
+      >
+        <Logos />
+      </motion.div>
     </div>
   );
 }

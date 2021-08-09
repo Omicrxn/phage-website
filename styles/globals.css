@@ -13,7 +13,7 @@
     url("/fonts/orkney/orkney-medium-webfont.woff") format("woff");
   font-weight: 400;
   font-style: normal;
-  font-display: swap;
+  font-display: auto;
 }
 
 @font-face {
@@ -24,7 +24,7 @@
     url("/fonts/orkney/orkney-regular-webfont.woff") format("woff");
   font-weight: 300;
   font-style: normal;
-  font-display: swap;
+  font-display: auto;
 }
 
 @font-face {
@@ -35,7 +35,7 @@
     url("/fonts/orkney/orkney-light-webfont.woff") format("woff");
   font-weight: 200;
   font-style: normal;
-  font-display: swap;
+  font-display: auto;
 }
 
 @font-face {
@@ -46,7 +46,7 @@
     url("/fonts/orkney/orkney-bold-webfont.woff") format("woff");
   font-weight: bold;
   font-style: normal;
-  font-display: swap;
+  font-display: auto;
 }
 
 
@@ -73,8 +73,8 @@ a {
 }
 
 * {
-  --phage-dark: #313f52;
-  --phage-light: #f1f2f3;
+  --phage-dark: #222a33;
+  --phage-light: #f9fafa;
   font-family: "Orkney";
   background-color: var(--phage-light);
   color: var(--phage-dark);
@@ -87,13 +87,15 @@ a {
 
 h1 {
   font-family: "Montserrat";
-  font-weight: 300;
+  font-weight: 400;
   --max-size: 69;
   --min-size: 45;
   font-size: var(--responsive);
   line-height: 150%;
   opacity: 1;
   color: var(--phage-dark);
+  letter-spacing: 0.05em;
+  
 }
 
 /* h2{
@@ -107,8 +109,35 @@ h1 {
   color: var(--phage-dark);
 } */
 .nav-text {
-  font-family: "Orkney";
-  font-size: 1em;
-  font-weight: 400;
+  font-family: "Montserrat";
+  --max-size: 16;
+  --min-size: 16;
+  font-size: var(--responsive);
+  font-weight: 600;
   font-style: normal;
 }
+
+.text{
+  font-family: "Orkney";
+  --max-size: 16;
+  --min-size: 12;
+  font-size: var(--responsive);
+  font-style: normal;
+}
+
+.icon-placeholder {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  flex: 40px 0;
+  margin-right: 20px;
+}
+
+.text-placeholder {
+  border-radius: 5px;
+  width: 200px;
+  height: 20px;
+  flex: 1;
+}
+
+

@@ -5,7 +5,7 @@ const NavItem = (props) => {
 
       <li >
 
-        <Link href={props.href}><a href="#" className="nav-text font-bold text-gray-700 px-2  hover:bg-gray-300 rounded transition-colors duration-300">{props.text}</a></Link>
+        <Link href={props.href} onClick={props.onClick}><a onClick={props.onClick} href="#" className="nav-text font-bold text-gray-700 hover:bg-gray-300 rounded transition-colors duration-300">{props.text}</a></Link>
 
       </li>
 
