@@ -8,7 +8,7 @@ module.exports = {
     ],
     options: {
       safelist: {
-        standard: ["outline-none"],
+       
       },
     },
   },
@@ -17,29 +17,29 @@ module.exports = {
     container: {
       center: true,
     },
+    screens: {
+      sm: "576px",
+      // => @media (min-width: 640px) { ... }
+
+      md: "768px",
+      // => @media (min-width: 768px) { ... }
+
+      lg: "992px",
+      // => @media (min-width: 1024px) { ... }
+
+      xl: "1200px",
+      // => @media (min-width: 1280px) { ... }
+
+      '2xl': "1400px",
+      // => @media (min-width: 1536px) { ... }
+    },
     extend: {
-      screens: {
-        sm: "576px",
-        // => @media (min-width: 640px) { ... }
-
-        md: "768px",
-        // => @media (min-width: 768px) { ... }
-
-        lg: "992px",
-        // => @media (min-width: 1024px) { ... }
-
-        xl: "1200px",
-        // => @media (min-width: 1280px) { ... }
-
-        "2xl": "1400px",
-        // => @media (min-width: 1536px) { ... }
-      },
-      transformOrigin: {
-        "0": "0%",
-      },
-      zIndex: {
-        "-1": "-1",
-      },
+        zIndex: {
+        '-1': '-1',
+        },
+        transformOrigin: {
+          0: "0%",
+        },
       colors: {
         phage: {
           light: "#F9FAFA",
@@ -59,11 +59,7 @@ module.exports = {
   },
   variants: {
     borderColor: ["responsive", "hover", "focus", "focus-within"],
-    xtend: {
-      zIndex: {
-        "-1": "-1",
-      },
-    },
+    
   },
   plugins: [],
 };

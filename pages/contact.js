@@ -1,8 +1,7 @@
-import Head from "next/head";
-import Image from "next/image";
-import Input from "../components/Input";
-import styles from "../styles/Home.module.css";
 
+import Input from "../components/Input";
+import TextArea from "../components/TextArea";
+import {useState} from 'react'
 import {
   FiTwitter,
   FiInstagram,
@@ -13,6 +12,36 @@ import {
 } from "react-icons/fi";
 
 export default function Contact() {
+  const [name, setName] = useState('')
+  const [email, setEmail] = useState('')
+  const [message, setMessage] = useState('')
+  const [submitted, setSubmitted] = useState(false)
+  const handleSubmit = (e) => { 
+    e.preventDefault()
+    console.log('Sending')
+  let data = {
+      name,
+      email,
+      message
+    }
+  fetch('/api/contact', {
+      method: 'POST',
+      headers: {
+        'Accept': 'application/json, text/plain, */*',
+        'Content-Type': 'application/json'
+      },
+      body: JSON.stringify(data)
+    }).then((res) => {
+      console.log('Response received')
+      if (res.status === 200) {
+        console.log('Response succeeded!')
+        setSubmitted(true)
+        setName('')
+        setEmail('')
+        setBody('')
+      }
+    })
+  }
   return (
     <div className="container flex flex-col h-full">
       <h2 className="mx-5 md:mx-0 mt-7 mb-7 md:my-7 text-5xl font-header font-normal text-phage-dark">
@@ -23,12 +52,13 @@ export default function Contact() {
           {/* Contact form */}
           <div className="flex-grow">
             <form action="flex-grow" className="space-y-10 ">
-              <Input label="Full Name" />
-              <Input label="Email" />
-              <Input label="Message" />
+              <Input label="Full Name" name="name" label="Full Name" onChange={setName} value={name}/>
+              <Input label="Email" name="email" label="Email" onChange={setEmail} value={email} />
+              <TextArea label="Message" name="message" label="Message" rows="10" cols="30" onChange={setMessage} value={message}/>
               <button
                 className="w-full h-14 text-phage-light bg-gradient-to-tr from-phage-blue to-phage-purple  focus:outline-none"
                 type="submit"
+                onClick={(e)=>{handleSubmit(e)}}
               >
                 Send
               </button>
