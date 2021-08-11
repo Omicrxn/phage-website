@@ -2,20 +2,18 @@ import { motion } from "framer-motion";
 import Head from "next/head";
 import Hero from "../sections/Hero";
 import Logos from "../sections/Logos";
-import styles from "../styles/Home.module.css";
-
 export default function Home() {
   return (
-    <div className="container flex flex-col items-center justify-centers h-full">
+    <div className="container flex flex-col items-center justify-center h-full py-2 ">
       <Head>
         <title>Phage | Home</title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <div className="w-full flex flex-grow justify-center items-center">
+      <div className=" w-full flex flex-grow justify-center items-center">
         <Hero />
       </div>
       <motion.div
-        className="container flex-grow-0 mb-20"
+        className=" w-full flex-grow-0 mb-20"
         initial="hidden"
         animate="visible"
         variants={{

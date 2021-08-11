@@ -1,17 +1,10 @@
-// tailwind.config.js
 module.exports = {
-  purge: {
-    content: [
-      "./pages/**/*.{js,ts,jsx,tsx}",
-      "./components/**/*.{js,ts,jsx,tsx}",
-      "./sections/**/*.{js,ts,jsx,tsx}",
-    ],
-    options: {
-      safelist: {
-       
-      },
-    },
-  },
+  mode: "jit",
+  purge: [
+    "./pages/**/*.{js,ts,jsx,tsx}",
+    "./components/**/*.{js,ts,jsx,tsx}",
+    "./sections/**/*.{js,ts,jsx,tsx}",
+  ],
   darkMode: false, // or 'media' or 'class'
   theme: {
     container: {
@@ -30,16 +23,16 @@ module.exports = {
       xl: "1200px",
       // => @media (min-width: 1280px) { ... }
 
-      '2xl': "1400px",
+      "2xl": "1400px",
       // => @media (min-width: 1536px) { ... }
     },
     extend: {
-        zIndex: {
-        '-1': '-1',
-        },
-        transformOrigin: {
-          0: "0%",
-        },
+      zIndex: {
+        'n1': "-1",
+      },
+      transformOrigin: {
+        0: "0%",
+      },
       colors: {
         phage: {
           light: "#F9FAFA",
@@ -58,8 +51,8 @@ module.exports = {
     },
   },
   variants: {
-    borderColor: ["responsive", "hover", "focus", "focus-within"],
-    
+
+    extend: {},
   },
   plugins: [],
 };

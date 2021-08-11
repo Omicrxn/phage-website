@@ -1,7 +1,7 @@
 import React from "react";
 const TextArea = (props) => {
   return (
-    <div class="outline relative border border-phage-dark focus-within:border-phage-blue">
+    <div class="outline relative border border-phage-dark focus-within:border-phage-blue z-0">
       
       <textarea
         name={props.label}
@@ -15,7 +15,7 @@ const TextArea = (props) => {
       ></textarea>
       <label
         for={props.label}
-        className="absolute top-0 text-phage-dark bg-phage-light text-base p-4 duration-300 origin-0"
+        className="absolute top-0 text-phage-dark bg-phage-light text-lg p-4 duration-300 z-n1 origin-0"
       >
         {props.label}
       </label>

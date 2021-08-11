@@ -1,16 +1,13 @@
+import {useState} from "react";
+import Head from "next/head";
 import Input from "../components/Input";
 import TextArea from "../components/TextArea";
-import { useState } from "react";
 import {
-  FiTwitter,
-  FiInstagram,
-  FiYoutube,
-  FiMapPin,
-  FiSmartphone,
-  FiMail,
-} from "react-icons/fi";
-
-export default function Contact() {
+    FiMapPin,
+    FiSmartphone,
+    FiMail,
+  } from "react-icons/fi";
+export default function Custom404() {
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
   const [message, setMessage] = useState("");
@@ -37,12 +34,17 @@ export default function Contact() {
         setSubmitted(true);
         setName("");
         setEmail("");
-        setBody("");
+        setMessage("");
       }
     });
   };
   return (
-    <div className="container flex flex-col h-full">
+    <div className="container flex flex-col h-full py-2 ">
+      <Head>
+        <title>Phage | Contact</title>
+        <link rel="icon" href="/favicon.ico" />
+      </Head>
+
       <h2 className="mx-5 md:mx-0 mt-7 mb-7 md:my-7 text-5xl font-header font-normal text-phage-dark">
         We are here for you
       </h2>
@@ -50,7 +52,7 @@ export default function Contact() {
         <div className="flex flex-1 flex-wrap">
           {/* Contact form */}
           <div className="flex-grow">
-            <form action="flex-grow" className="space-y-10 ">
+            <form action="flex-grow overflow-hidden" className="space-y-10 ">
               <Input
                 label="Full Name"
                 name="name"

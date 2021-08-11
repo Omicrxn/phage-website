@@ -49,24 +49,15 @@
   font-display: auto;
 }
 
-
-html {
-  height: 100%;
-}
-body {
-  min-height: 100%;
-}
-
 html,
 body {
-  background-color: #f1f2f3;
+  background-color: #f9fafa;
   padding: 0;
   margin: 0;
 
   font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
     Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
 }
-
 a {
   color: inherit;
   text-decoration: none;
@@ -76,7 +67,6 @@ a {
   --phage-dark: #222a33;
   --phage-light: #f9fafa;
   font-family: "Orkney";
-  background-color: var(--phage-light);
   color: var(--phage-dark);
   --diff: calc(var(--max-size) - var(--min-size));
   --responsive: calc(
@@ -84,7 +74,6 @@ a {
   ); /* Ranges from 421px to 1199px*/
   box-sizing: border-box;
 }
-
 h1 {
   font-family: "Montserrat";
   font-weight: 400;
@@ -95,19 +84,8 @@ h1 {
   opacity: 1;
   color: var(--phage-dark);
   letter-spacing: 0.05em;
-  
 }
 
-/* h2{
-  font-family: "Montserrat";
-  font-weight: 400;
-  --max-size: 48;
-  --min-size: 25;
-  font-size: var(--responsive);
-  line-height: 150%;
-  opacity: 1;
-  color: var(--phage-dark);
-} */
 .nav-text {
   font-family: "Montserrat";
   --max-size: 16;
@@ -117,7 +95,7 @@ h1 {
   font-style: normal;
 }
 
-.text{
+.text {
   font-family: "Orkney";
   --max-size: 16;
   --min-size: 12;
@@ -140,4 +118,19 @@ h1 {
   flex: 1;
 }
 
+input:focus-within ~ label {
+  @apply text-phage-blue;
+}
 
+.outline input:focus-within ~ label,
+.outline input:not(:placeholder-shown) ~ label {
+  @apply transform scale-75 -translate-y-4 z-0 ml-3 px-1 py-0;
+}
+
+textarea:focus-within ~ label {
+  @apply text-phage-blue;
+}
+.outline textarea:focus-within ~ label,
+.outline textarea:not(:placeholder-shown) ~ label {
+  @apply transform scale-75 -translate-y-4 z-0 ml-3 px-1 py-0;
+}

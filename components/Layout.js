@@ -4,17 +4,11 @@ import ResponsiveNavbar from "./ResponsiveNavbar";
 //children property is basically anything nested inside the layout component in _app.js
 const Layout = ({ children }) => {
   return (
-
-      
-
-      <main className="container flex flex-col h-screen">
+    <main className="container flex flex-col h-screen">
       <ResponsiveNavbar />
 
       {children}
-
-
-      </main>
-
+    </main>
   );
 };
 

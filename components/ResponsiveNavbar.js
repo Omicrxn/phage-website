@@ -1,5 +1,5 @@
 import React from "react";
-import NavItem from "./NavItem";
+import NavItem from "./NavItem.js";
 import { FiGithub, FiInstagram, FiMenu, FiTwitter } from "react-icons/fi";
 import Link from "next/link";
 import Image from "next/image";
@@ -7,7 +7,7 @@ import Image from "next/image";
 export default function Navbar({ fixed }) {
   const [navbarOpen, setNavbarOpen] = React.useState(false);
   return (
-      <nav className=" flex flex-wrap items-center px-10 lg:px-2 py-5  mb-3 justify-center">
+      <nav className="flex flex-wrap items-center px-10 lg:px-0 py-5  mb-3 justify-center">
         <div className="container flex flex-wrap">
           <div className=" lg:hidden order-2 flex-grow flex justify-end">
             <button

@@ -3,7 +3,7 @@ import Image from "next/image";
 import React from "react";
 const Hero = () => {
   return (
-    <div className="w-full h-full items-center justify-center grid grid-cols-1 gap-y-6 lg:grid-cols-2 lg:gap-y-0">
+    <div className="w-full items-center justify-center grid grid-cols-1 gap-y-6 lg:grid-cols-2 lg:gap-y-10 ">
       <motion.div
         className=" text-center lg:text-left "
         initial="hidden"
@@ -48,7 +48,7 @@ const Hero = () => {
       >
         <Image
           priority
-          className="hero-img"
+          className="hero-img "
           src="/images/wireframes.png"
           width={4302}
           height={2748}

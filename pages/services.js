@@ -1,15 +1,14 @@
 import Head from "next/head";
-import ServiceLeft from "../sections/ServiceLeft";
-import ServiceRight from "../sections/ServiceRight";
-import styles from "../styles/Home.module.css";
-
+import ServiceLeft from "../sections/ServiceLeft"
+import ServiceRight from "../sections/ServiceRight"
 export default function Services() {
   return (
-    <div className="w-full px-3 md:px-0">
+    <div className="container flex flex-col h-full py-2 ">
       <Head>
         <title>Phage | Services</title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
+
       <h2 className=" mx-4 md:mx-0 mt-7 md:my-7 text-5xl font-header font-normal text-phage-dark">
         Services
       </h2>
