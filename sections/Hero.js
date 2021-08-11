@@ -47,6 +47,7 @@ const Hero = () => {
         }}
       >
         <Image
+          priority
           className="hero-img"
           src="/images/wireframes.png"
           width={4302}

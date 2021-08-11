@@ -13,7 +13,7 @@ const Input = (props) => {
         onChange={e => props.onChange(e.target.value)}
 
       />
-      <label for={props.label} className="absolute top-0 text-base bg-phage-white p-4 duration-300 origin-0">
+      <label for={props.label} className="absolute top-0 text-base bg-phage-white p-4 -z-1 duration-300 origin-0">
         {props.label}
       </label>
     </div>
