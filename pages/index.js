@@ -4,12 +4,12 @@ import Hero from "../sections/Hero";
 import Logos from "../sections/Logos";
 export default function Home() {
   return (
-    <div className="container flex flex-col items-center justify-center h-full py-2 ">
+    <div className="container flex flex-col items-center justify-center md:h-full py-2 ">
       <Head>
         <title>Phage | Home</title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <div className=" w-full flex flex-grow justify-center items-center">
+      <div className="w-full flex flex-grow justify-center items-center">
         <Hero />
       </div>
       <motion.div
