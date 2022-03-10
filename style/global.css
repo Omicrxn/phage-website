@@ -55,7 +55,7 @@ body {
   padding: 0;
   margin: 0;
 
-  font-family: -apple-system, Roboto, BlinkMacSystemFont, Segoe UI,  Oxygen,
+  font-family: apple-system, Roboto, BlinkMacSystemFont, Segoe UI,  Oxygen,
     Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
 }
 a {
@@ -122,9 +122,9 @@ input:focus-within ~ label {
   @apply text-phage-blue;
 }
 
-.outline input:focus-within ~ label,
+/* .outline input:focus-within ~ label,
 .outline input:not(:placeholder-shown) ~ label {
-  @apply transform scale-75 -translate-y-4 z-0 ml-3 px-1 py-0;
+  @apply transform scale-75 translate-y-4 z-0 ml-3 px-1 py-0;
 }
 
 textarea:focus-within ~ label {
@@ -132,5 +132,5 @@ textarea:focus-within ~ label {
 }
 .outline textarea:focus-within ~ label,
 .outline textarea:not(:placeholder-shown) ~ label {
-  @apply transform scale-75 -translate-y-4 z-0 ml-3 px-1 py-0;
-}
+  @apply transform scale-75 translate-y-4 z-0 ml-3 px-1 py-0;
+} */

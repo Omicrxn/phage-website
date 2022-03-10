@@ -1,4 +1,5 @@
 import Head from "next/head";
+import Link from "next/link";
 import Card from "../components/Card";
 
 export default function Portfolio() {
@@ -24,13 +25,17 @@ export default function Portfolio() {
           />
         </div>
         <div className="bg-gray-500 md:row-span-1 md:col-span-2">
+         <Link href="/project">
+           <a>
           <Card
-            title="Influence"
+            title="Insomnia"
             subtitle="Design and Development"
             path="/images/pc2.png"
             width="600"
             height="300"
           />
+          </a>
+          </Link>
         </div>
         <div className=" bg-gray-500 md:row-span-1 md:col-span-1">
           <Card

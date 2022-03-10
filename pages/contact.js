@@ -1,5 +1,6 @@
 import {useState} from "react";
 import Head from "next/head";
+import Script from "next/script";
 import Input from "../components/Input";
 import TextArea from "../components/TextArea";
 import {
@@ -48,66 +49,14 @@ export default function Custom404() {
       <h2 className="mx-5 md:mx-0 mt-7 mb-7 md:my-7 text-5xl font-header font-normal text-phage-dark">
         We are here for you
       </h2>
-      <div className="flex items-center h-full flex-wrap mx-5 md:mx-0">
-        <div className="flex flex-1 flex-wrap">
-          {/* Contact form */}
-          <div className="flex-grow">
-            <form action="flex-grow overflow-hidden" className="space-y-10 ">
-              <Input
-                label="Full Name"
-                name="name"
-                label="Full Name"
-                onChange={setName}
-                value={name}
-              />
-              <Input
-                label="Email"
-                name="email"
-                label="Email"
-                onChange={setEmail}
-                value={email}
-              />
-              <TextArea
-                label="Message"
-                name="message"
-                label="Message"
-                rows="10"
-                cols="30"
-                onChange={setMessage}
-                value={message}
-              />
-              <button
-                className="w-full h-14 text-phage-light bg-gradient-to-tr from-phage-blue to-phage-purple  focus:outline-none"
-                type="submit"
-                onClick={(e) => {
-                  handleSubmit(e);
-                }}
-              >
-                Send
-              </button>
-            </form>
-          </div>
-          {/* Icons */}
-          <div className="flex flex-grow justify-center mt-10 lg:mt-0">
-            <div className="flex flex-col justify-between space-y-10">
-              <div className="flex  items-center ">
-                <FiMapPin className="mr-2 " size={32} />
-                <p>
-                  Vilanova i la geltrú <br /> Barcelona,Spain.
-                </p>
-              </div>
-              <div className="flex items-center ">
-                <FiSmartphone className="mr-2" size={32} />
-                <p>+34 639 13 44 48</p>
-              </div>
-              <div className="flex items-center">
-                <FiMail className="mr-2" size={32} />
-                <p>phagedevelopment@gmail.com</p>
-              </div>
-            </div>
-          </div>
+      <div className="h-full mx-5 md:mx-0">
+        <div className="text-center text-lg">
+        <p >Want us to develop your software? You can schedule a first call with us.</p>
         </div>
+      <div data-url="https://calendly.com/omicrxn?hide_landing_page_details=1&hide_gdpr_banner=1&background_color=222a33&text_color=f9fafa&primary_color=3c85de" className="calendly-inline-widget w-full h-screen overflow-hidden"></div>
+      <Script type="text/javascript" src="https://assets.calendly.com/assets/external/widget.js" async></Script>
       </div>
     </div>
   );
 }
+
